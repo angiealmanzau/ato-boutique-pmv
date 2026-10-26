@@ -984,3 +984,261 @@ footer div:last-child {
     font-weight: bold;
     margin-bottom: 8px;
 }
+/* =========================================================
+   CARRITO
+   ========================================================= */
+
+   .carrito-hero {
+    padding: 75px 6% 40px;
+    background-color: var(--fondo);
+}
+
+.carrito-hero h2 {
+    font-size: 3.8rem;
+    letter-spacing: -3px;
+    margin-bottom: 12px;
+}
+
+.carrito-hero > p:last-child {
+    color: var(--gris-oscuro);
+}
+
+
+.carrito-layout {
+    padding: 65px 6% 100px;
+    display: grid;
+    grid-template-columns: 1.4fr 0.6fr;
+    gap: 55px;
+    align-items: start;
+}
+
+
+/* PRODUCTO DEL CARRITO */
+
+.carrito-item {
+    border: 1px solid var(--gris-claro);
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    background-color: var(--blanco);
+}
+
+.carrito-imagen {
+    min-height: 360px;
+    background-color: #e6e6e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gris);
+    font-size: 0.8rem;
+}
+
+.carrito-info {
+    padding: 35px;
+}
+
+.carrito-info h3 {
+    font-size: 1.8rem;
+    margin: 18px 0 10px;
+}
+
+.carrito-precio {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.carrito-datos {
+    border-top: 1px solid var(--gris-claro);
+    border-bottom: 1px solid var(--gris-claro);
+    padding: 16px 0;
+}
+
+.carrito-datos p {
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 0;
+}
+
+.carrito-datos span {
+    color: var(--gris);
+}
+
+.pieza-unica-texto {
+    margin-top: 18px;
+    font-size: 0.85rem;
+    color: var(--gris-oscuro);
+}
+
+.eliminar-producto {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 0.8rem;
+    border-bottom: 1px solid var(--negro);
+}
+
+
+/* RESUMEN DE COMPRA */
+
+.resumen-compra {
+    border: 1px solid var(--gris-claro);
+    padding: 32px;
+    position: sticky;
+    top: 25px;
+}
+
+.resumen-compra h2 {
+    font-size: 1.4rem;
+    margin-bottom: 25px;
+}
+
+.resumen-linea,
+.resumen-total {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.resumen-linea {
+    padding: 14px 0;
+    border-bottom: 1px solid var(--gris-claro);
+    font-size: 0.9rem;
+}
+
+.resumen-linea span:last-child {
+    text-align: right;
+    color: var(--gris);
+}
+
+.resumen-total {
+    padding: 24px 0;
+    font-size: 1.15rem;
+}
+
+.resumen-total strong {
+    font-size: 1.3rem;
+}
+
+
+.btn-confirmar-pedido,
+.btn-seguir-comprando {
+    width: 100%;
+    min-height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 0.76rem;
+    font-weight: bold;
+}
+
+.btn-confirmar-pedido {
+    border: none;
+    background-color: var(--negro);
+    color: var(--blanco);
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.btn-confirmar-pedido:hover {
+    background-color: var(--gris-oscuro);
+}
+
+.btn-seguir-comprando {
+    border: 1px solid var(--negro);
+}
+
+.btn-seguir-comprando:hover {
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+
+
+.resumen-aviso {
+    margin-top: 28px;
+    padding: 20px;
+    background-color: var(--beige);
+}
+
+.resumen-aviso strong {
+    font-size: 0.85rem;
+}
+
+.resumen-aviso p {
+    margin-top: 8px;
+    font-size: 0.78rem;
+    line-height: 1.6;
+    color: var(--gris-oscuro);
+}
+
+
+/* CONFIRMACIÓN */
+
+.confirmacion-pedido {
+    display: none;
+    padding: 100px 6%;
+    background-color: var(--negro);
+    color: var(--blanco);
+    text-align: center;
+}
+
+.confirmacion-pedido.visible {
+    display: block;
+}
+
+.confirmacion-pedido div {
+    max-width: 750px;
+    margin: auto;
+}
+
+.confirmacion-pedido h2 {
+    font-size: 3rem;
+    letter-spacing: -2px;
+    margin-bottom: 25px;
+}
+
+.confirmacion-pedido p {
+    margin-bottom: 12px;
+    color: #cccccc;
+}
+
+.confirmacion-pedido .btn-principal {
+    margin-top: 28px;
+}
+
+
+/* =========================================================
+   RESPONSIVE CARRITO
+   ========================================================= */
+
+@media (max-width: 950px) {
+
+    .carrito-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .resumen-compra {
+        position: static;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .carrito-hero h2 {
+        font-size: 2.8rem;
+    }
+
+    .carrito-item {
+        grid-template-columns: 1fr;
+    }
+
+    .carrito-imagen {
+        min-height: 300px;
+    }
+
+    .confirmacion-pedido h2 {
+        font-size: 2.2rem;
+    }
+
+}

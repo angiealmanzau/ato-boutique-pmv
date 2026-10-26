@@ -480,3 +480,186 @@ footer div:last-child {
         gap: 18px;
     }
 }
+/* =========================================================
+   CATÁLOGO
+   ========================================================= */
+
+   .catalogo-hero {
+    padding: 80px 6% 40px;
+    background-color: var(--fondo);
+}
+
+.catalogo-hero h2 {
+    font-size: 4rem;
+    letter-spacing: -3px;
+    margin-bottom: 10px;
+}
+
+.catalogo-hero > p:last-child {
+    color: var(--gris-oscuro);
+    font-size: 1rem;
+}
+
+
+.catalogo-controles {
+    padding: 35px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--gris-claro);
+}
+
+.filtros {
+    display: flex;
+    gap: 10px;
+}
+
+.filtro {
+    padding: 12px 22px;
+    border: 1px solid var(--gris-claro);
+    background-color: var(--blanco);
+    cursor: pointer;
+    font-size: 0.85rem;
+}
+
+.filtro:hover {
+    border-color: var(--negro);
+}
+
+.filtro.activo {
+    background-color: var(--negro);
+    color: var(--blanco);
+    border-color: var(--negro);
+}
+
+.ordenar {
+    padding: 12px 18px;
+    border: 1px solid var(--gris-claro);
+    background-color: var(--blanco);
+    font-size: 0.85rem;
+}
+
+
+.catalogo-productos {
+    padding: 60px 6% 90px;
+}
+
+.catalogo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.catalogo-card {
+    position: relative;
+    border: 1px solid var(--gris-claro);
+    background-color: var(--blanco);
+}
+
+.catalogo-imagen {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    background-color: #e6e6e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gris);
+    font-size: 0.8rem;
+}
+
+.catalogo-info {
+    padding: 18px;
+}
+
+.catalogo-info h3 {
+    font-size: 1rem;
+    margin-bottom: 6px;
+}
+
+.catalogo-info .precio {
+    margin: 0 0 8px;
+}
+
+.stock {
+    color: var(--gris);
+    font-size: 0.8rem;
+    margin-bottom: 18px;
+}
+
+.catalogo-info a {
+    display: block;
+    padding: 12px;
+    text-align: center;
+    background-color: var(--negro);
+    color: var(--blanco);
+    text-transform: uppercase;
+    font-size: 0.75rem;
+}
+
+.catalogo-info a:hover {
+    background-color: var(--gris-oscuro);
+}
+
+.badge-nuevo {
+    background-color: #555555;
+}
+
+
+.catalogo-mensaje {
+    padding: 90px 6%;
+    text-align: center;
+    background-color: var(--beige);
+}
+
+.catalogo-mensaje h2 {
+    font-size: 2.8rem;
+    letter-spacing: -2px;
+    margin-bottom: 16px;
+}
+
+.catalogo-mensaje p {
+    max-width: 650px;
+    margin: auto;
+    color: var(--gris-oscuro);
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   RESPONSIVE CATÁLOGO
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .catalogo-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .catalogo-hero h2 {
+        font-size: 3rem;
+    }
+
+    .catalogo-controles {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .filtros {
+        flex-wrap: wrap;
+    }
+
+    .catalogo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ordenar {
+        width: 100%;
+    }
+
+}

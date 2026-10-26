@@ -1,0 +1,482 @@
+/* =========================================================
+   ATO BOUTIQUE - PMV
+   Estilos generales
+   ========================================================= */
+
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --negro: #111111;
+    --gris-oscuro: #333333;
+    --gris: #777777;
+    --gris-claro: #eeeeee;
+    --fondo: #f7f7f5;
+    --blanco: #ffffff;
+    --beige: #e8e4dc;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--blanco);
+    color: var(--negro);
+    line-height: 1.5;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+header {
+    width: 100%;
+    min-height: 90px;
+    padding: 20px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--gris-claro);
+    background-color: var(--blanco);
+}
+
+.logo h1 {
+    font-size: 1.4rem;
+    letter-spacing: 0.5px;
+}
+
+.logo p {
+    font-size: 0.65rem;
+    letter-spacing: 1.6px;
+    margin-top: 2px;
+    color: var(--gris-oscuro);
+}
+
+nav {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+nav a {
+    font-size: 0.9rem;
+    transition: opacity 0.2s ease;
+}
+
+nav a:hover {
+    opacity: 0.5;
+}
+
+
+/* =========================================================
+   HERO PRINCIPAL
+   ========================================================= */
+
+.hero {
+    min-height: 590px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--fondo);
+}
+
+.hero-contenido {
+    padding: 90px 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.etiqueta {
+    font-size: 0.72rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
+.hero h2 {
+    font-size: clamp(2.8rem, 5vw, 5rem);
+    line-height: 0.95;
+    letter-spacing: -3px;
+    max-width: 650px;
+}
+
+.hero-contenido > p:not(.etiqueta) {
+    max-width: 500px;
+    margin-top: 25px;
+    color: var(--gris-oscuro);
+    font-size: 1.05rem;
+}
+
+.hero-botones {
+    display: flex;
+    gap: 14px;
+    margin-top: 35px;
+}
+
+.btn-principal,
+.btn-secundario {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 48px;
+    padding: 0 26px;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: bold;
+    letter-spacing: 0.7px;
+    transition: all 0.2s ease;
+}
+
+.btn-principal {
+    background-color: var(--negro);
+    color: var(--blanco);
+    border: 1px solid var(--negro);
+}
+
+.btn-principal:hover {
+    background-color: var(--gris-oscuro);
+}
+
+.btn-secundario {
+    border: 1px solid var(--negro);
+    background-color: transparent;
+}
+
+.btn-secundario:hover {
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+
+.hero-imagen {
+    min-height: 590px;
+}
+
+.placeholder {
+    height: 100%;
+    min-height: 590px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:
+        linear-gradient(
+            135deg,
+            #dedbd5,
+            #f4f2ee
+        );
+    color: var(--gris);
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   PRODUCTOS
+   ========================================================= */
+
+.productos {
+    padding: 80px 6%;
+}
+
+.titulo-seccion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.titulo-seccion h2 {
+    font-size: 1.8rem;
+    letter-spacing: -1px;
+}
+
+.titulo-seccion a {
+    font-size: 0.85rem;
+    border-bottom: 1px solid var(--negro);
+}
+
+.grid-productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.producto-card {
+    position: relative;
+    border: 1px solid var(--gris-claro);
+    background-color: var(--blanco);
+    padding-bottom: 18px;
+}
+
+.producto-imagen {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    background-color: #e6e6e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--gris);
+    font-size: 0.8rem;
+}
+
+.producto-card h3 {
+    font-size: 0.95rem;
+    margin: 16px 16px 4px;
+}
+
+.precio {
+    margin: 0 16px 16px;
+    font-size: 0.95rem;
+    font-weight: bold;
+}
+
+.producto-card > a {
+    display: block;
+    margin: 0 16px;
+    padding: 11px;
+    text-align: center;
+    background-color: var(--negro);
+    color: var(--blanco);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+}
+
+.producto-card > a:hover {
+    background-color: var(--gris-oscuro);
+}
+
+.badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 2;
+    padding: 6px 9px;
+    background-color: var(--negro);
+    color: var(--blanco);
+    font-size: 0.62rem;
+    font-weight: bold;
+    letter-spacing: 0.7px;
+}
+
+
+/* =========================================================
+   ATO CIRCULAR
+   ========================================================= */
+
+.ato-circular {
+    margin: 0 6% 80px;
+    min-height: 360px;
+    padding: 60px;
+    display: grid;
+    grid-template-columns: 1.4fr 0.6fr;
+    align-items: center;
+    background-color: var(--beige);
+}
+
+.ato-circular h2 {
+    font-size: 3rem;
+    letter-spacing: -2px;
+    margin-bottom: 14px;
+}
+
+.ato-circular p:not(.etiqueta) {
+    max-width: 520px;
+    margin-bottom: 28px;
+    color: var(--gris-oscuro);
+}
+
+.circular-icono {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8rem;
+    opacity: 0.35;
+}
+
+
+/* =========================================================
+   BENEFICIOS
+   ========================================================= */
+
+.beneficios {
+    padding: 60px 6%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid var(--gris-claro);
+    border-bottom: 1px solid var(--gris-claro);
+}
+
+.beneficios div {
+    text-align: center;
+    padding: 20px 40px;
+}
+
+.beneficios div:not(:last-child) {
+    border-right: 1px solid var(--gris-claro);
+}
+
+.beneficios h3 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.beneficios p {
+    color: var(--gris);
+    font-size: 0.85rem;
+}
+
+
+/* =========================================================
+   SOBRE ATO
+   ========================================================= */
+
+.sobre-ato {
+    padding: 100px 6%;
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+}
+
+.sobre-ato h2 {
+    font-size: 2.5rem;
+    letter-spacing: -1.5px;
+    margin-bottom: 20px;
+}
+
+.sobre-ato p {
+    color: var(--gris-oscuro);
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer {
+    padding: 35px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--gris-claro);
+    background-color: var(--blanco);
+}
+
+footer strong {
+    font-size: 0.95rem;
+}
+
+footer p,
+footer div:last-child {
+    font-size: 0.75rem;
+    color: var(--gris);
+}
+
+
+/* =========================================================
+   RESPONSIVE - TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    nav {
+        gap: 16px;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-imagen {
+        min-height: 380px;
+    }
+
+    .placeholder {
+        min-height: 380px;
+    }
+
+    .grid-productos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ato-circular {
+        grid-template-columns: 1fr;
+    }
+
+    .circular-icono {
+        margin-top: 35px;
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE - CELULAR
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-contenido {
+        padding: 65px 6%;
+    }
+
+    .hero h2 {
+        font-size: 3rem;
+    }
+
+    .hero-botones {
+        flex-direction: column;
+    }
+
+    .grid-productos {
+        grid-template-columns: 1fr;
+    }
+
+    .ato-circular {
+        margin: 0 4% 60px;
+        padding: 40px 25px;
+    }
+
+    .ato-circular h2 {
+        font-size: 2.4rem;
+    }
+
+    .beneficios {
+        grid-template-columns: 1fr;
+    }
+
+    .beneficios div:not(:last-child) {
+        border-right: none;
+        border-bottom: 1px solid var(--gris-claro);
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+    }
+}

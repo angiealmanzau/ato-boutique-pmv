@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Inventario | ATO Boutique</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="admin-body">
+
+    <div class="admin-layout">
+
+        <!-- MENÚ LATERAL -->
+        <aside class="admin-sidebar">
+
+            <div class="admin-logo">
+                <h2>ATO BOUTIQUE</h2>
+                <p>ADMINISTRACIÓN</p>
+            </div>
+
+            <nav class="admin-menu">
+
+                <a href="panel.html">
+                    Panel
+                </a>
+
+                <a href="inventario.html" class="activo">
+                    Productos / Inventario
+                </a>
+
+                <a href="ventas.html">
+                    Ventas
+                </a>
+
+                <a href="index.html">
+                    Ver tienda
+                </a>
+
+            </nav>
+
+        </aside>
+
+
+        <!-- CONTENIDO -->
+        <main class="admin-main">
+
+            <header class="admin-header">
+
+                <div>
+                    <p class="etiqueta">ATO BOUTIQUE</p>
+
+                    <h1>
+                        Productos e Inventario
+                    </h1>
+
+                    <p>
+                        Control de disponibilidad, stock y estado
+                        de los productos comercializados.
+                    </p>
+                </div>
+
+            </header>
+
+
+            <!-- RESUMEN -->
+            <section class="inventario-resumen">
+
+                <div>
+                    <span>Productos registrados</span>
+                    <strong>48</strong>
+                </div>
+
+                <div>
+                    <span>Disponibles</span>
+                    <strong>42</strong>
+                </div>
+
+                <div>
+                    <span>Circulares</span>
+                    <strong>12</strong>
+                </div>
+
+                <div>
+                    <span>Agotados / Vendidos</span>
+                    <strong>6</strong>
+                </div>
+
+            </section>
+
+
+            <!-- TABLA -->
+            <section class="admin-seccion">
+
+                <div class="inventario-cabecera">
+
+                    <div>
+                        <h2>
+                            Inventario de productos
+                        </h2>
+
+                        <p>
+                            Consulta el estado actual de cada producto.
+                        </p>
+                    </div>
+
+                    <button type="button" class="btn-admin">
+                        + Registrar producto
+                    </button>
+
+                </div>
+
+
+                <div class="tabla-responsive">
+
+                    <table class="tabla-inventario">
+
+                        <thead>
+                            <tr>
+                                <th>Producto</th>
+                                <th>Tipo</th>
+                                <th>Condición</th>
+                                <th>Stock</th>
+                                <th>Precio</th>
+                                <th>Estado</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>
+                                    <strong>Gorra ATO</strong>
+                                </td>
+
+                                <td>
+                                    Nuevo
+                                </td>
+
+                                <td>
+                                    Nuevo
+                                </td>
+
+                                <td>
+                                    6
+                                </td>
+
+                                <td>
+                                    $99.000
+                                </td>
+
+                                <td>
+                                    <span class="estado estado-ok">
+                                        Disponible
+                                    </span>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td>
+                                    <strong>Set Hombre</strong>
+                                </td>
+
+                                <td>
+                                    Nuevo
+                                </td>
+
+                                <td>
+                                    Nuevo
+                                </td>
+
+                                <td>
+                                    2
+                                </td>
+
+                                <td>
+                                    $360.000
+                                </td>
+
+                                <td>
+                                    <span class="estado estado-ok">
+                                        Disponible
+                                    </span>
+                                </td>
+                            </tr>
+
+
+                            <!-- PRODUCTO CIRCULAR PRINCIPAL -->
+                            <tr class="fila-circular">
+
+                                <td>
+                                    <strong>
+                                        Chaqueta Denim Vintage
+                                    </strong>
+
+                                    <small>
+                                        Pieza única
+                                    </small>
+                                </td>
+
+                                <td>
+                                    Circular
+                                </td>
+
+                                <td>
+                                    Excelente
+                                </td>
+
+                                <td id="stockChaqueta">
+                                    1
+                                </td>
+
+                                <td>
+                                    $129.000
+                                </td>
+
+                                <td>
+                                    <span
+                                        class="estado estado-ok"
+                                        id="estadoChaqueta"
+                                    >
+                                        Disponible
+                                    </span>
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>
+                                        Bolso Preloved
+                                    </strong>
+
+                                    <small>
+                                        Pieza única
+                                    </small>
+                                </td>
+
+                                <td>
+                                    Circular
+                                </td>
+
+                                <td>
+                                    Muy bueno
+                                </td>
+
+                                <td>
+                                    0
+                                </td>
+
+                                <td>
+                                    $110.000
+                                </td>
+
+                                <td>
+                                    <span class="estado estado-vendido">
+                                        Vendido
+                                    </span>
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>
+                                        Gafas ATO
+                                    </strong>
+                                </td>
+
+                                <td>
+                                    Nuevo
+                                </td>
+
+                                <td>
+                                    Nuevo
+                                </td>
+
+                                <td>
+                                    4
+                                </td>
+
+                                <td>
+                                    $150.000
+                                </td>
+
+                                <td>
+                                    <span class="estado estado-ok">
+                                        Disponible
+                                    </span>
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+            <!-- REGLA DE NEGOCIO -->
+            <section class="admin-seccion">
+
+                <div class="regla-inventario">
+
+                    <div>
+                        <p class="etiqueta">
+                            REGLA DE NEGOCIO
+                        </p>
+
+                        <h2>
+                            Control de piezas únicas
+                        </h2>
+
+                        <p>
+                            Las prendas circulares pueden corresponder
+                            a una sola unidad. Cuando la venta sea
+                            confirmada, el sistema deberá actualizar
+                            automáticamente su stock y disponibilidad.
+                        </p>
+                    </div>
+
+
+                    <div class="ejemplo-stock">
+
+                        <div>
+                            <span>Antes de la venta</span>
+
+                            <strong>
+                                Stock: 1
+                            </strong>
+
+                            <small>
+                                Disponible
+                            </small>
+                        </div>
+
+                        <span class="flecha-stock">
+                            →
+                        </span>
+
+                        <div>
+                            <span>Después de la venta</span>
+
+                            <strong>
+                                Stock: 0
+                            </strong>
+
+                            <small>
+                                Vendida
+                            </small>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>

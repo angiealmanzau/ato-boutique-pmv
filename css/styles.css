@@ -1242,3 +1242,242 @@ footer div:last-child {
     }
 
 }
+/* =========================================================
+   PANEL ADMINISTRATIVO
+   ========================================================= */
+
+   .admin-body {
+    background-color: #f5f5f3;
+}
+
+.admin-layout {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+}
+
+
+/* SIDEBAR */
+
+.admin-sidebar {
+    min-height: 100vh;
+    padding: 35px 25px;
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+
+.admin-logo {
+    padding-bottom: 35px;
+    border-bottom: 1px solid #333333;
+}
+
+.admin-logo h2 {
+    font-size: 1.1rem;
+}
+
+.admin-logo p {
+    margin-top: 4px;
+    font-size: 0.65rem;
+    letter-spacing: 1.5px;
+    color: #aaaaaa;
+}
+
+.admin-menu {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.admin-menu a {
+    padding: 14px 16px;
+    color: #cccccc;
+    font-size: 0.85rem;
+}
+
+.admin-menu a:hover,
+.admin-menu a.activo {
+    background-color: var(--blanco);
+    color: var(--negro);
+}
+
+
+/* CONTENIDO */
+
+.admin-main {
+    padding: 50px 5%;
+}
+
+.admin-header {
+    margin-bottom: 45px;
+}
+
+.admin-header h1 {
+    font-size: 2.8rem;
+    letter-spacing: -2px;
+}
+
+.admin-header > div > p:last-child {
+    color: var(--gris);
+}
+
+
+/* INDICADORES */
+
+.admin-indicadores {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-bottom: 50px;
+}
+
+.indicador-card {
+    min-height: 180px;
+    padding: 25px;
+    background-color: var(--blanco);
+    border: 1px solid var(--gris-claro);
+    display: flex;
+    flex-direction: column;
+}
+
+.indicador-card > span {
+    font-size: 0.82rem;
+    color: var(--gris);
+}
+
+.indicador-card strong {
+    margin-top: 12px;
+    font-size: 2.5rem;
+}
+
+.indicador-card a {
+    margin-top: auto;
+    font-size: 0.78rem;
+}
+
+
+/* SECCIONES */
+
+.admin-seccion {
+    margin-bottom: 45px;
+    padding: 30px;
+    background-color: var(--blanco);
+    border: 1px solid var(--gris-claro);
+}
+
+.admin-titulo {
+    margin-bottom: 25px;
+}
+
+.admin-titulo h2 {
+    font-size: 1.3rem;
+}
+
+
+/* ACCIONES */
+
+.acciones-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.accion-card {
+    min-height: 190px;
+    padding: 25px;
+    border: 1px solid var(--gris-claro);
+    display: flex;
+    flex-direction: column;
+}
+
+.accion-card strong {
+    font-size: 1rem;
+}
+
+.accion-card p {
+    margin-top: 10px;
+    color: var(--gris);
+    font-size: 0.82rem;
+    line-height: 1.6;
+}
+
+.accion-card span {
+    margin-top: auto;
+    font-size: 0.78rem;
+    font-weight: bold;
+}
+
+.accion-card:hover {
+    border-color: var(--negro);
+}
+
+
+/* ACTIVIDAD */
+
+.actividad-lista {
+    border-top: 1px solid var(--gris-claro);
+}
+
+.actividad-item {
+    padding: 18px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--gris-claro);
+}
+
+.actividad-item strong {
+    font-size: 0.88rem;
+}
+
+.actividad-item p {
+    margin-top: 3px;
+    color: var(--gris);
+    font-size: 0.8rem;
+}
+
+.actividad-item > span {
+    color: var(--gris);
+    font-size: 0.75rem;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 1100px) {
+
+    .admin-indicadores {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 800px) {
+
+    .admin-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .admin-sidebar {
+        min-height: auto;
+    }
+
+    .admin-menu {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .acciones-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .admin-indicadores {
+        grid-template-columns: 1fr;
+    }
+
+}

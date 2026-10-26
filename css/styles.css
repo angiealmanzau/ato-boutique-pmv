@@ -1693,3 +1693,158 @@ footer div:last-child {
     }
 
 }
+/* =========================================================
+   VENTAS
+   ========================================================= */
+
+   .ventas-resumen {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-bottom: 35px;
+}
+
+.ventas-resumen div {
+    padding: 24px;
+    background-color: var(--blanco);
+    border: 1px solid var(--gris-claro);
+}
+
+.ventas-resumen span {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--gris);
+}
+
+.ventas-resumen strong {
+    display: block;
+    margin-top: 10px;
+    font-size: 2rem;
+}
+
+
+/* CABECERA */
+
+.ventas-cabecera {
+    margin-bottom: 25px;
+}
+
+.ventas-cabecera h2 {
+    font-size: 1.4rem;
+}
+
+.ventas-cabecera p {
+    margin-top: 5px;
+    color: var(--gris);
+    font-size: 0.85rem;
+}
+
+
+/* TABLA */
+
+.tabla-ventas {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabla-ventas th,
+.tabla-ventas td {
+    padding: 18px 16px;
+    text-align: left;
+    border-bottom: 1px solid var(--gris-claro);
+    font-size: 0.85rem;
+}
+
+.tabla-ventas th {
+    background-color: var(--fondo);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.venta-destacada {
+    background-color: #faf8f3;
+}
+
+.estado-pendiente {
+    background-color: #f4ecd8;
+    color: #8a691d;
+}
+
+
+/* VENTA DEL PMV */
+
+.venta-pmv {
+    display: grid;
+    gap: 35px;
+}
+
+.venta-pmv h2 {
+    font-size: 2rem;
+    margin-bottom: 12px;
+}
+
+.venta-pmv > div:first-child > p:last-child {
+    max-width: 700px;
+    color: var(--gris);
+    line-height: 1.7;
+}
+
+.venta-flujo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.venta-flujo div {
+    padding: 22px;
+    border: 1px solid var(--gris-claro);
+}
+
+.venta-flujo span {
+    display: block;
+    color: var(--gris);
+    font-size: 0.75rem;
+    margin-bottom: 8px;
+}
+
+.venta-flujo strong {
+    font-size: 0.9rem;
+}
+
+.btn-admin-link {
+    display: inline-block;
+    width: fit-content;
+    padding: 14px 22px;
+    background-color: var(--negro);
+    color: var(--blanco);
+    font-size: 0.78rem;
+    font-weight: bold;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+
+    .ventas-resumen {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .venta-flujo {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .ventas-resumen {
+        grid-template-columns: 1fr;
+    }
+
+    .venta-flujo {
+        grid-template-columns: 1fr;
+    }
+
+}

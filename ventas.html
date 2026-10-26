@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ventas | ATO Boutique</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="admin-body">
+
+    <div class="admin-layout">
+
+        <!-- MENÚ LATERAL -->
+        <aside class="admin-sidebar">
+
+            <div class="admin-logo">
+                <h2>ATO BOUTIQUE</h2>
+                <p>ADMINISTRACIÓN</p>
+            </div>
+
+            <nav class="admin-menu">
+
+                <a href="panel.html">
+                    Panel
+                </a>
+
+                <a href="inventario.html">
+                    Productos / Inventario
+                </a>
+
+                <a href="ventas.html" class="activo">
+                    Ventas
+                </a>
+
+                <a href="index.html">
+                    Ver tienda
+                </a>
+
+            </nav>
+
+        </aside>
+
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <main class="admin-main">
+
+            <header class="admin-header">
+
+                <div>
+
+                    <p class="etiqueta">
+                        ATO BOUTIQUE
+                    </p>
+
+                    <h1>
+                        Ventas
+                    </h1>
+
+                    <p>
+                        Registro y seguimiento de las operaciones comerciales
+                        realizadas en la plataforma.
+                    </p>
+
+                </div>
+
+            </header>
+
+
+            <!-- RESUMEN DE VENTAS -->
+            <section class="ventas-resumen">
+
+                <div>
+                    <span>Ventas registradas</span>
+                    <strong>18</strong>
+                </div>
+
+                <div>
+                    <span>Pedidos completados</span>
+                    <strong>15</strong>
+                </div>
+
+                <div>
+                    <span>Pedidos pendientes</span>
+                    <strong>3</strong>
+                </div>
+
+                <div>
+                    <span>Ventas circulares</span>
+                    <strong>5</strong>
+                </div>
+
+            </section>
+
+
+            <!-- TABLA DE VENTAS -->
+            <section class="admin-seccion">
+
+                <div class="ventas-cabecera">
+
+                    <div>
+
+                        <h2>
+                            Ventas recientes
+                        </h2>
+
+                        <p>
+                            Consulta los pedidos registrados y su estado.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="tabla-responsive">
+
+                    <table class="tabla-ventas">
+
+                        <thead>
+
+                            <tr>
+                                <th>Pedido</th>
+                                <th>Producto</th>
+                                <th>Tipo</th>
+                                <th>Cliente</th>
+                                <th>Total</th>
+                                <th>Estado</th>
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+
+                            <!-- VENTA PRINCIPAL DEL PMV -->
+                            <tr class="venta-destacada">
+
+                                <td>
+                                    <strong>
+                                        #ATO-1003
+                                    </strong>
+                                </td>
+
+                                <td>
+                                    Chaqueta Denim Vintage
+                                </td>
+
+                                <td>
+                                    Circular
+                                </td>
+
+                                <td>
+                                    Cliente web
+                                </td>
+
+                                <td>
+                                    $129.000
+                                </td>
+
+                                <td>
+
+                                    <span class="estado estado-ok">
+                                        Completado
+                                    </span>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>
+                                        #ATO-1002
+                                    </strong>
+                                </td>
+
+                                <td>
+                                    Gorra ATO
+                                </td>
+
+                                <td>
+                                    Nuevo
+                                </td>
+
+                                <td>
+                                    Cliente web
+                                </td>
+
+                                <td>
+                                    $99.000
+                                </td>
+
+                                <td>
+
+                                    <span class="estado estado-ok">
+                                        Completado
+                                    </span>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>
+                                        #ATO-1001
+                                    </strong>
+                                </td>
+
+                                <td>
+                                    Set Hombre
+                                </td>
+
+                                <td>
+                                    Nuevo
+                                </td>
+
+                                <td>
+                                    Cliente web
+                                </td>
+
+                                <td>
+                                    $360.000
+                                </td>
+
+                                <td>
+
+                                    <span class="estado estado-pendiente">
+                                        Pendiente
+                                    </span>
+
+                                </td>
+
+                            </tr>
+
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+            <!-- DETALLE DE LA VENTA DEL PMV -->
+            <section class="admin-seccion">
+
+                <div class="venta-pmv">
+
+                    <div>
+
+                        <p class="etiqueta">
+                            OPERACIÓN DEL PMV
+                        </p>
+
+                        <h2>
+                            Venta de pieza circular registrada
+                        </h2>
+
+                        <p>
+                            El pedido #ATO-1003 corresponde a la venta de
+                            una Chaqueta Denim Vintage clasificada como
+                            producto Circular y Preloved.
+                        </p>
+
+                    </div>
+
+
+                    <div class="venta-flujo">
+
+                        <div>
+
+                            <span>
+                                Producto
+                            </span>
+
+                            <strong>
+                                Chaqueta Denim Vintage
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Cantidad
+                            </span>
+
+                            <strong>
+                                1
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Total
+                            </span>
+
+                            <strong>
+                                $129.000
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Resultado
+                            </span>
+
+                            <strong>
+                                Venta registrada
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <a href="inventario.html" class="btn-admin-link">
+                        Consultar inventario →
+                    </a>
+
+                </div>
+
+            </section>
+
+
+        </main>
+
+    </div>
+
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>
